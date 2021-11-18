@@ -16,25 +16,37 @@ CEP
         <header>
             <h1>Naming of Esters</h1>
         </header>
-       
-        <div>
-        
-        <div id="ester"></div>
-        
-       
-        <div id="oates">
-            <button onclick="setOateIdentity('1')" >methanoate</button>
-            <button onclick="setOateIdentity('2')">ethanoate</button>
-            <button onclick="setOateIdentity('3')">propanoate</button>
-            <button onclick="setOateIdentity('4')">butanoate</button>
+
+        <div id="basic100">
+            Press the buttons to show how the parts of the name relate to the structure
+            of the ester
         </div>
+       <div id="basic100">
+        <div id="oates">
+            <button id="blank">  </button>
+            <button id="ateButton" onclick="setOateIdentity('1')" >methanoate</button>
+            <button id="ateButton" onclick="setOateIdentity('2')">ethanoate</button>
+            <button id="ateButton" onclick="setOateIdentity('3')">propanoate</button>
+            <button id="ateButton" onclick="setOateIdentity('4')">butanoate</button>
+            <button id="blank">  </button>
+        </div>
+       </div>
+    
+        <div id="basic100">
+        <div id="left20">
         <div id="thyls">
-            <button onclick="setThylIdentity('1')">methyl</button>
-            <button onclick="setThylIdentity('2')">ethyl</button>
-            <button onclick="setThylIdentity('3')">propyl</button>
-            <button onclick="setThylIdentity('4')">butyl</button>
+            <button id="button" onclick="setThylIdentity('1')">methyl</button><br>
+            <button id="button" onclick="setThylIdentity('2')">ethyl</button><br>
+            <button id="button" onclick="setThylIdentity('3')">propyl</button><br>
+            <button id="button" onclick="setThylIdentity('4')">butyl</button><br>
             
         </div>
+        </div>
+        <div id="esterName"></div>
+        <div id="ester"></div>
+        
+        </div>
+
     </body>
 </html>
 

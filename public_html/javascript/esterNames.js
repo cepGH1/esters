@@ -11,9 +11,13 @@ function test(){
  
  var oateIdentity ="1";
  var thylIdentity ="1";
+
+ var ates = ["methanoate", "ethanoate", "propanoate", "butanoate"];
+ var yls = ["methyl", "ethyl", "propyl", "butyl"];
  
  var  genPath = "<img src='./images/";
- var  endPath =".jpg' height='200' width='300'>";
+ var  endPath =".jpg' height='300' width='450'>";
+
  
  
  function setOateIdentity(myIdentity){
@@ -21,6 +25,7 @@ function test(){
     
      var myPath = genPath + oateIdentity + thylIdentity + endPath ;
      document.getElementById("ester").innerHTML = myPath;
+     showEsterName();
  }
  
  function setThylIdentity(myThyl){
@@ -28,6 +33,17 @@ function test(){
     
      var myPath = genPath + oateIdentity + thylIdentity  + endPath ;
      document.getElementById("ester").innerHTML = myPath;
+
+     showEsterName();
+ }
+ 
+ function showEsterName(){
+     var thylNum = Number(thylIdentity) -1;
+     var ateNum = Number(oateIdentity) -1;
+     var ester = yls[thylNum] + ates[ateNum];
+      document.getElementById("esterName").innerHTML = ester;
+     
+
  }
  
 // function makeAddress(myOateIdentity, myThylIdentity){
